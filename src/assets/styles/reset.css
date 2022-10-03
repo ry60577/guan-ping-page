@@ -1,3 +1,4 @@
+@import './_font.scss';
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,8 +24,10 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 body, #app {
     height: 100vh;
 	line-height: 1;
+	font-size: 16px;
 	color: black;
 	background: white;
+	font-family: "Noto Sans TC", "WorkSans", "Inter Tight", 微軟正黑體, Roboto, Arial, Helvetica, sans-serif;
 }
 ol, ul {
 	list-style: none;
