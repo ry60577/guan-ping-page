@@ -7,7 +7,7 @@
       <h1>Hello</h1>
       <div class="sub_title">A Bit About Me</div>
       <div class="article">
-        I have 1+ years of development experience in frontend. familiar with Vue.js, CSS, HTML, Javascript, and RWD. I love to find the solution to fix the problem and enjoy in it. When cooperating, I give some solution to discuss with.
+        1+ years for the frontend Developer. Familiar with Vue.js, CSS, HTML, Javascript, RWD, and Git.
       </div>
       <div class="btn_wrap">
         <template v-for="page in data.header" :key="page.name">
