@@ -3,7 +3,8 @@ const isProduction = process.env.NODE_ENV === 'production'
 const publicPath = 'guan-ping-page'
 
 module.exports = {
-  publicPath: isProduction ? `/${publicPath}` : '/',
+  // publicPath: isProduction ? `/${publicPath}` : '/',
+  publicPath: './',
   //   transpileDependencies: false,
   outputDir: `dist/${publicPath}`,
   assetsDir: 'static',
