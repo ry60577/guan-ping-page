@@ -21,7 +21,8 @@ import ProjectCard from '../components/ProjectCard.vue'
         margin-block-end: 4rem;
         font-size: 2em;
         font-weight: 800;
-        color: map-get($colors, primary);
+        // color: map-get($colors, primary);
+        color: colors(primary);
     }
 }
 @media screen and (max-width: 600px) {

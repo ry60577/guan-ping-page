@@ -124,17 +124,20 @@ header {
       a {
         padding: 0 1rem;
         font-size: 0.8em;
-        color: colors(primary);
+        // color: colors(primary);
+        color: colors(secondary);
         font-family: "Roboto";
         &:hover {
-          color: colors(secondary);
+          // color: colors(secondary);
+          color: colors(forth);
         }
         &:first-child {
           border-right: 1px solid colors(primary);
         }
       }
       .router-link-active {
-        color: darkcyan;
+        // color: darkcyan;
+        color: colors(primary);
         font-weight: 700;
       }
     }

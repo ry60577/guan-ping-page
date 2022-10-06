@@ -1,8 +1,15 @@
 $colors: (
-    primary: #085e54,
-    secondary: #75b39e,
-    third: #54c2b5,
-    forth: #8eccc5
+    // primary: #085e54,
+    // secondary: #75b39e,
+    // third: #54c2b5,
+    // https://yakimhsu.com/project/project_w6_HTML_tag.html
+    // http://web.thu.edu.tw/hzed/www/tag.htm
+
+    primary: #014955,
+    secondary: #1687a7,
+    third: #e4d1d3,
+    forth: #dd0a35
+
 );
 
 @function colors($key) {
