@@ -7,7 +7,7 @@
       <h1>Hello</h1>
       <div class="sub_title">A Bit About Me</div>
       <div class="article">
-        1+ years for the frontend Developer. Familiar with Vue.js, CSS, HTML, Javascript, RWD, and Git.
+        2+ years as a Front-End Developer. Familiar with React, TypeORM, NestJS, TypeORM, Vue.js, CSS, HTML, Javascript, RWD, and Git.
       </div>
       <div class="btn_wrap">
         <template v-for="page in data.header" :key="page.name">

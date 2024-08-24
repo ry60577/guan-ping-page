@@ -1,7 +1,12 @@
 <template>
   <div class="project_card">
     <div class="project_content">
-      <h2>{{ project.name }}</h2>
+      <h2>
+        <a  v-if="project.link" target="_blank" :href="`${project.link}`">
+          {{ project.name }}
+        </a>
+        <span v-else>{{ project.name }}</span>
+      </h2>
       <div class="environment">
         <span v-for="item in project.environment" :key="item"> #{{ item }}</span>
       </div>

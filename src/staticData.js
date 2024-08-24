@@ -2,23 +2,34 @@ import { reactive } from 'vue'
 
 const data = reactive({
   header: [
-    { name: 'Resume', route: '/resume' },
-    { name: 'Project', route: '/project' }
+    { name: 'Resume', icon: 'fa fa-address-card', route: '/resume' },
+    { name: 'Project', icon: 'fas fa-folder-tree', route: '/project' }
   ],
   resume: {
     skill: [
-      'Basics：HTML5, CSS3, RWD, JavaScript, jQuery',
+      'Basics：HTML5, CSS3, RWD, JavaScript, jQuery, Tailwind CSS',
       'Styling： Sass, Bootstrap',
-      'Frontend Frameworks： Vue.js',
+      'Frontend Frameworks： React, Vue.js',
+      'Back-end： NestJS, TypeORM',
       'Building tools： Npm & Yarn, Eslint',
       'Dev skills： Git Version Control',
       'Language： English'
     ],
     experience: [
       {
-        title: 'Front-end Developer',
+        title: 'Full-End Developer',
+        establishmentName: 'CyberTAN technology, Inc.',
+        workTime: 'Feb 2023 ~ Present',
+        duty: [
+          'Project function maintenance',
+          'Develop for new feature',
+          'Troubleshooting & fixing'
+        ]
+      },
+      {
+        title: 'Front-End Developer',
         establishmentName: 'Flowring Technology Corp.',
-        workTime: 'Sep. 2021~Present',
+        workTime: 'Sep. 2021~Jan 2023',
         duty: [
           'Front-end development and maintenance of company products and customized projects',
           'Modularize management, Front-end framework application'
@@ -55,11 +66,26 @@ const data = reactive({
   },
   project: [
     {
+      name: 'Cloud Portal ',
+      link: 'https://portal.sonicfi-networks.com/',
+      desc: 'Provide the manager of the router to sign in and member management',
+      charge: 'Development of some new UI views and API integration',
+      environment: ['React', 'Tailwind CSS'],
+      feature: ['Sign-in', 'Sign-up', 'Member Management', 'Account Profile'],
+      image: [
+        require('./assets/images/cloudPortal/cover.png'),
+        require('./assets/images/cloudPortal/sign-in.png'),
+        require('./assets/images/cloudPortal/sign-up.png'),
+        require('./assets/images/cloudPortal/member-management.png'),
+        require('./assets/images/cloudPortal/account-profile.png')
+      ]
+    },
+    {
       name: 'Lale mini service-嘉藥志工服務團',
       desc: 'Provide volunteer to sign up, punch, inquiry of records',
       charge: 'Full-stack development',
       environment: ['Vue.js 2', 'Bootstrap', 'Vuex', 'Vue Router', 'Google Sheet', 'Google App Script'],
-      feature: ['Sign-up', 'Punch', ' Hours records', 'User manual'],
+      feature: ['Sign-up', 'Punch', 'Hours records', 'User manual'],
       image: [
         require('./assets/images/cnu/cover.png'),
         require('./assets/images/cnu/home.png'),
@@ -67,6 +93,29 @@ const data = reactive({
         require('./assets/images/cnu/punch.png'),
         require('./assets/images/cnu/record.png'),
         require('./assets/images/cnu/point.png')
+      ]
+    },
+    {
+      name: 'Lale Work - 辦公',
+      link: 'https://lalework.lale.im/LaleWork/',
+      desc: 'Provide SaaS product',
+      charge: 'Front-End development',
+      environment: ['Vue.js 3', 'Ant Design', 'Vuex', 'Vue Router'],
+      feature: ['Sign-in', 'Sign-up', 'Purchase', 'Account Profile', 'Cart', 'Order'],
+      image: [
+        require('./assets/images/laleWork/cover.png'),
+        require('./assets/images/laleWork/sign-in.png'),
+        require('./assets/images/laleWork/sign-up.png'),
+        require('./assets/images/laleWork/after-sign-in.png'),
+        require('./assets/images/laleWork/home.png'),
+        require('./assets/images/laleWork/main.png'),
+        require('./assets/images/laleWork/purchase.png'),
+        require('./assets/images/laleWork/product.png'),
+        require('./assets/images/laleWork/cart.png'),
+        require('./assets/images/laleWork/shop.png'),
+        require('./assets/images/laleWork/shop2.png'),
+        require('./assets/images/laleWork/shop3.png'),
+        require('./assets/images/laleWork/order.png')
       ]
     },
     {

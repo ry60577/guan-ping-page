@@ -1,6 +1,6 @@
 <template>
     <div class="resume_card">
-        <div class="work_time">{{ !resume.workTime ? '' : resume.workTime }}</div>
+        <div class="work_time" v-if="resume.workTime">{{ resume.workTime }}</div>
         <div class="resume_content">
             <div class="resume_title">{{ !resume.title ? '' : resume.title }}</div>
             <div class="resume_company">{{ !resume.establishmentName ? '' : resume.establishmentName }}</div>
@@ -25,11 +25,9 @@ defineProps({
 .resume_card {
     margin-block-end: 2em;
     width: 100%;
-    display: flex;
     line-height: 1.6em;
     font-size: 1em;
     .resume_content {
-        width: 20em;
         .resume_title {
             font-weight: bold;
         }
@@ -47,27 +45,24 @@ defineProps({
 }
 @media screen and (min-width: 1025px) {
     .resume_card {
-        justify-content: space-between;
+        display: grid;
+        grid-auto-columns: minmax(0, 1fr);
+        grid-auto-flow: column;
         column-gap: 2em;
+        .resume_content {
+            width: 40em;
+        }
     }
 }
 @media screen and (max-width: 1024px) {
     .resume_card {
+        display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         .resume_content {
             .resume_title {
                 margin-block-start: 0.5em;
                 margin-block-end: 0.5em;
-            }
-            .resume_company {
-                white-space: nowrap;
-            }
-            ul {
-                li {
-                    list-style: inside;
-                    white-space: nowrap;
-                }
             }
         }
     }

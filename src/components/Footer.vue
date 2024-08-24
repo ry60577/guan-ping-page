@@ -6,23 +6,19 @@
         <i class="far fa-mobile"></i>
         +886-921-580-071
       </a>
-      <a href="&#x6D;&#x61;&#x69;&#x6C;&#x74;&#x6F;&#x3A;&#x72;&#x79;&#x36;&#x30;&#x35;&#x37;&#x37;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;">
+      <a
+        href="&#x6D;&#x61;&#x69;&#x6C;&#x74;&#x6F;&#x3A;&#x72;&#x79;&#x36;&#x30;&#x35;&#x37;&#x37;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;"
+      >
         <i class="far fa-envelope"></i>
         &#x72;&#x79;&#x36;&#x30;&#x35;&#x37;&#x37;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;
       </a>
-      <div @click="handleOpenLinkedIn">
+      <a target="_blank" href="https://www.linkedin.com/in/guanping-chen-b1ab23198/" rel="noreferrer">
         <i class="fab fa-linkedin"></i>
         GuanPing Chen
-      </div>
+      </a>
     </div>
   </footer>
 </template>
-
-<script setup>
-const handleOpenLinkedIn = () => {
-  window.open('https://www.linkedin.com/in/guanping-chen-b1ab23198/')
-}
-</script>
 
 <style lang="scss" scoped>
 footer {

@@ -44,7 +44,6 @@ import ResumeCard from '../components/ResumeCard.vue'
     }
     .row {
         padding-top: 3em;
-        display: flex;
         &:not(:nth-child(2)) {
             border-top: 1px solid rgb(199, 199, 199);
         }
@@ -60,7 +59,10 @@ import ResumeCard from '../components/ResumeCard.vue'
         margin-inline-end: 5em;
         .row {
             padding: 5em;
-            justify-content: space-between;
+            display: grid;
+            grid-auto-columns: 0.4fr 0.4fr 1fr;
+            grid-auto-flow: column;
+            // justify-content: space-between;
         }
     }
 }
@@ -69,6 +71,7 @@ import ResumeCard from '../components/ResumeCard.vue'
         margin-inline-start: 2em;
         margin-inline-end: 2em;
         .row {
+            display: flex;
             flex-direction: column;
         }
     }

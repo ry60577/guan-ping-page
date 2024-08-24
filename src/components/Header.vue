@@ -6,11 +6,18 @@
     </div>
     <div class="menu_container">
       <nav>
+        <router-link to="/" @click="handleMenuWidth">
+          <i class="fa fa-home"></i>
+          Home
+        </router-link>
         <router-link
           v-for="page in data.header"
           :key="page.name"
           :to="page.route"
-          >{{ page.name }}</router-link
+          @click="handleMenuWidth"
+          >
+            <i :class="`${page.icon}`"></i>
+             {{ page.name }}</router-link
         >
       </nav>
     </div>
@@ -48,6 +55,10 @@ watch(
     menuActivate.value = false
   }
 )
+const handleMenuWidth = () => {
+  menuActivate.value = false
+  menuWidth.value = '0%'
+}
 </script>
 
 <style lang="scss" scoped>
@@ -80,6 +91,9 @@ header {
     }
   }
   .menu_container {
+    nav {
+      min-width: 16em;
+    }
     a {
       text-decoration: none;
     }
@@ -99,12 +113,14 @@ header {
     &.change {
       .bar1 {
         transform: translate(0, 0.5em) rotate(-45deg);
+        background-color: white;
       }
       .bar2 {
         opacity: 0;
       }
       .bar3 {
         transform: translate(0, -0.4em) rotate(45deg);
+        background-color: white;
       }
     }
   }
@@ -131,7 +147,8 @@ header {
           // color: colors(secondary);
           color: colors(forth);
         }
-        &:first-child {
+        &:nth-child(1),
+        &:nth-child(2) {
           border-right: 1px solid colors(primary);
         }
       }
